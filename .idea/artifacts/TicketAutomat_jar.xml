@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TicketAutomat:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TicketAutomat_jar</output-path>
+    <root id="archive" name="TicketAutomat.jar">
+      <element id="module-output" name="TicketAutomat" />
+    </root>
+  </artifact>
+</component>

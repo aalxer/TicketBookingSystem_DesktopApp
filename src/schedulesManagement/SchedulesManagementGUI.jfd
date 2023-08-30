@@ -1,0 +1,414 @@
+JFDML JFormDesigner: "7.0.5.3.411" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par t {comp topPanel::::1010:x, seq {comp sidePanel::::285:x, space :0:0:p, comp sideBar:::p::p, space :0:0:p, comp parentPanel:::p:716:p}}"
+			"$verticalGroup": "par l {seq l {comp topPanel:::p:88:p, par l {seq t {space :0:1:x, comp parentPanel:::p:576:p}, comp sidePanel::t::577:x, comp sideBar::l:::x}}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:417:p, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:69:p, space ::13:x}}"
+			} ) {
+				name: "topPanel"
+				"background": new java.awt.Color( 18, 62, 93, 255 )
+				"preferredSize": new java.awt.Dimension( 600, 100 )
+				"minimumSize": new java.awt.Dimension( 0, 0 )
+				"maximumSize": new java.awt.Dimension( 3274, 3247 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Ticket vending machine"
+					"foreground": sfield java.awt.Color white
+					"font": new java.awt.Font( "Century Schoolbook", 1, 30 )
+					"alignmentY": 2.5f
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp helpBtn::::285:x, comp homepageBtn::t::285:x, comp addBtn::l::0:x, comp removeBtn::l::0:x, comp printAllBtn::l::0:x}"
+				"$verticalGroup": "par l {seq l {comp homepageBtn:::p:60:p, space :::p, comp addBtn:::p:60:p, space :::p, comp removeBtn:::p:60:p, space :::p, comp printAllBtn:::p:60:p, space ::259:x, comp helpBtn:::p:60:p}}"
+			} ) {
+				name: "sidePanel"
+				"background": new java.awt.Color( 33, 105, 160, 255 )
+				"preferredSize": new java.awt.Dimension( 600, 110 )
+				"minimumSize": new java.awt.Dimension( 135, 216 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addBtn"
+					"text": "Add new schedule"
+					"foreground": sfield java.awt.Color white
+					"font": &Font0 new java.awt.Font( "Century Gothic", 0, 24 )
+					"background": &Color0 new java.awt.Color( 33, 105, 160, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"focusPainted": false
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\iconmonstr-plus-4-32.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBtn", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "addBtnMouseEntered", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "addBtnMouseExited", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "removeBtn"
+					"text": "Remove schedule"
+					"foreground": sfield java.awt.Color white
+					"font": new java.awt.Font( "Century Gothic", 0, 24 )
+					"background": &Color1 new java.awt.Color( 33, 105, 160, 255 )
+					"focusPainted": false
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\iconmonstr-minus-4-32.png" )
+					"iconTextGap": 10
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "removeBtnMouseEntered", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "removeBtnMouseExited", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeBtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "printAllBtn"
+					"text": "print all schedules"
+					"foreground": sfield java.awt.Color white
+					"font": &Font1 new java.awt.Font( "Century Gothic", 0, 24 )
+					"background": #Color1
+					"focusPainted": false
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\iconmonstr-printer-1-32.png" )
+					"iconTextGap": 10
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "printAllBtnMouseEntered", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "printAllBtnMouseExited", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "homepageBtn"
+					"text": "Homepage"
+					"foreground": sfield java.awt.Color white
+					"font": #Font0
+					"background": #Color0
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"focusPainted": false
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\iconmonstr-home-1-32.png" )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "homepageBtnMouseEntered", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "homepageBtnMouseExited", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "homepageBtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "helpBtn"
+					"text": "Help"
+					"foreground": sfield java.awt.Color white
+					"font": #Font1
+					"background": #Color1
+					"focusPainted": false
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\iconmonstr-help-6-32.png" )
+					"iconTextGap": 10
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "helpBtnMouseEntered", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "helpBtnMouseExited", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "helpBtn", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "parentPanel"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp startPanelIcon::l::716:x, comp startPanelTitel::t::716:x, comp label2::l::716:x}"
+					"$verticalGroup": "par l {seq l {space :p:75:p, comp startPanelIcon:::p:75:p, space :::p, comp startPanelTitel:::p:51:p, space s:::p, comp label2:::p:114:p, space ::237:x}}"
+				} ) {
+					name: "startPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "startPanelTitel"
+						"text": "Your Control Panel"
+						"foreground": sfield java.awt.Color gray
+						"font": new java.awt.Font( "Century Gothic", 1, 30 )
+						"horizontalAlignment": 0
+						"verticalAlignment": 1
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "startPanelIcon"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\iconmonstr-volume-control-9-64.png" )
+						"horizontalAlignment": 0
+						"verticalAlignment": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "select an option from the side panel .. "
+						"foreground": sfield java.awt.Color gray
+						"font": new java.awt.Font( "Century Gothic", 0, 22 )
+						"horizontalAlignment": 0
+						"verticalAlignment": 1
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card1"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:51:p, par l {seq l {par l {seq {comp ticketTyp2Cost:::p:103:p, space :::p, comp euroText2:::p:24:p}, comp ticketCostText:::p:187:p, seq l {comp ticketTyp1Cost:::p:103:p, space :::p, comp euroText:::p:24:p}, comp startCityFeld::l:p:197:p, comp startCityText::l:p:187:p}, space ::111:x, par l {comp desCityFeld:::p:197:p, par l {comp ticketTypComboBox1::t:p:233:p, comp ticketTypComboBox2::t:p:233:p, comp ticketTypComboBox3::t:p:233:p, comp ticketTypText:::p:187:p}, comp disCityText:::p:187:p}, space :p:124:p}, seq l {comp ticketTyp3Cost:::p:103:p, space :::p, comp euroText3:::p:24:p, space :p:338:p}}}, seq {par l {seq {space :p:116:p, comp addToListBtn2:::p:222:p, space :::p, comp cancelBtn2:::p:222:p}, seq l {space :p:100:p, comp addConfirmFeld:::p:440:p}}, space ::150:x}}"
+					"$verticalGroup": "par l {seq l {space :p:26:p, par b {comp startCityText::b:p::p, comp disCityText::b:p::p}, space u:::p, par b {comp startCityFeld::b:p:47:p, comp desCityFeld::b:p:47:p}, space :p:42:p, par b {comp ticketCostText::b:p::p, comp ticketTypText::b:p::p}, space u:::p, par l:::p {comp ticketTypComboBox1:::::x, comp euroText:::p:57:p, comp ticketTyp1Cost::t:p:48:p}, space s:::p, par b {comp ticketTyp2Cost::b:p:47:p, comp ticketTypComboBox2::b:p:47:p, comp euroText2::b:p:57:p}, space s:::p, par b {comp ticketTyp3Cost::b:p:47:p, comp ticketTypComboBox3::b:p:47:p, comp euroText3::b:p:57:p}, space u:::p, comp addConfirmFeld:::p:47:p, space ::57:x, par b {comp addToListBtn2::b:p:48:p, comp cancelBtn2::b:p:48:p}, space :p:28:p}}"
+				} ) {
+					name: "addSchedulePanel"
+					"background": new java.awt.Color( 240, 240, 240, 255 )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "startCityFeld"
+						"font": &Font2 new java.awt.Font( "Century Gothic", 0, 18 )
+						"background": &Color2 new java.awt.Color( 255, 255, 255, 255 )
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "desCityFeld"
+						"font": #Font2
+						"background": #Color2
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ticketTyp1Cost"
+						"font": #Font2
+						"background": #Color2
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "startCityText"
+						"text": "Start city :"
+						"font": &Font3 new java.awt.Font( "Century Gothic", 0, 14 )
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "disCityText"
+						"text": "Destination city :"
+						"font": new java.awt.Font( "Century Gothic", 0, 14 )
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ticketCostText"
+						"text": "Tickets cost :"
+						"font": #Font3
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ticketTyp2Cost"
+						"font": #Font2
+						"background": #Color2
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ticketTyp3Cost"
+						"font": #Font2
+						"background": #Color2
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "ticketTypComboBox1"
+						"font": new java.awt.Font( "Century Gothic", 0, 18 )
+						"foreground": sfield java.awt.Color gray
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "EINZEL_TICKET"
+							addElement( "EINZEL_TICKET" )
+							addElement( "WOCHEN_TICKET" )
+							addElement( "TAGESTICKET" )
+						}
+						"selectedIndex": -1
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "ticketTypComboBox2"
+						"foreground": sfield java.awt.Color gray
+						"font": new java.awt.Font( "Century Gothic", 0, 18 )
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "EINZEL_TICKET"
+							addElement( "EINZEL_TICKET" )
+							addElement( "WOCHEN_TICKET" )
+							addElement( "TAGESTICKET" )
+						}
+						"selectedIndex": -1
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "ticketTypComboBox3"
+						"font": new java.awt.Font( "Century Gothic", 0, 18 )
+						"foreground": sfield java.awt.Color gray
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "EINZEL_TICKET"
+							addElement( "EINZEL_TICKET" )
+							addElement( "WOCHEN_TICKET" )
+							addElement( "TAGESTICKET" )
+						}
+						"selectedIndex": -1
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ticketTypText"
+						"text": "Tickets typ :"
+						"font": #Font3
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "euroText"
+						"text": "€"
+						"font": &Font4 new java.awt.Font( "Arial", 0, 24 )
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "euroText2"
+						"text": "€"
+						"font": #Font4
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "euroText3"
+						"text": "€"
+						"font": #Font4
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addToListBtn2"
+						"text": "add to list"
+						"font": &Font5 new java.awt.Font( "Century Gothic", 0, 24 )
+						"foreground": sfield java.awt.Color gray
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\icons8-hinzufügen-48.png" )
+						"cursor": &Cursor0 new java.awt.Cursor( 12 )
+						"background": &Color3 new java.awt.Color( 240, 240, 240, 255 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "addToListBtn2MouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "addToListBtn2MouseExited", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addToListBtn2", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelBtn2"
+						"text": "cancel"
+						"font": #Font5
+						"foreground": sfield java.awt.Color gray
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						"icon": &SwingIcon0 new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\icons8-stornieren-48.png" )
+						"cursor": #Cursor0
+						"background": &Color4 new java.awt.Color( 240, 240, 240, 255 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "cancelBtn2MouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "cancelBtn2MouseExited", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "addConfirmFeld"
+						"font": &Font6 new java.awt.Font( "Century Gothic", 0, 18 )
+						"foreground": &Color5 new java.awt.Color( 37, 190, 123, 255 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card2"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:63:p, par l {comp removeConfirmFeld:::p:379:p, seq {comp indexInputFeld:::p:197:p, space u:::p, comp deleteScheduleBtn:::p:222:p}, comp removePanelText:::p:366:p, comp cancelBtn::l:p:222:p}, space ::222:x}}"
+					"$verticalGroup": "par l {seq l {space :p:78:p, comp removePanelText:::p:29:p, space :::p, par b {comp indexInputFeld::b:p:47:p, comp deleteScheduleBtn::b:p::p}, space u:::p, comp removeConfirmFeld:::p::p, space :p:38:p, comp cancelBtn:::p::p, space ::271:x}}"
+				} ) {
+					name: "removePanel"
+					"background": new java.awt.Color( 240, 240, 240, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "removePanelText"
+						"text": "Enter index of schedule to remove :"
+						"font": new java.awt.Font( "Century Gothic", 0, 18 )
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "indexInputFeld"
+						"font": #Font2
+						"background": #Color2
+						"foreground": sfield java.awt.Color gray
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelBtn"
+						"text": "cancel"
+						"font": #Font5
+						"foreground": sfield java.awt.Color gray
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						"icon": #SwingIcon0
+						"cursor": #Cursor0
+						"background": #Color4
+						"horizontalAlignment": 2
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "cancelBtnMouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "cancelBtnMouseExited", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "deleteScheduleBtn"
+						"text": "remove"
+						"font": #Font5
+						"foreground": sfield java.awt.Color gray
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\icons8-unwiederuflich-löschen-48.png" )
+						"cursor": #Cursor0
+						"background": #Color3
+						"horizontalAlignment": 2
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "deleteScheduleBtnMouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "deleteScheduleBtnMouseExited", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteScheduleBtn", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "removeConfirmFeld"
+						"font": #Font6
+						"foreground": #Color5
+						"preferredSize": new java.awt.Dimension( 48, 44 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card3"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:30:p, par l {seq l {comp reportBtn:::p:215:p, space s:::p, comp supportCallBtn:::p:217:p}, seq l {space :p:71:p, comp reportIcon:::p:73:p, space :p:160:p, comp supportCallIcon:::p:73:p}}, space :::x, par l {comp sendEmailBtn::l:p:200:p, seq t {comp sendEmailIcon:::p:73:p, space :p:63:p}}, space :p:30:p}}"
+					"$verticalGroup": "par l {seq l {space :p:51:p, par l {comp sendEmailIcon::l:p:58:p, comp supportCallIcon::l:p:58:p, comp reportIcon::l:p:58:p}, space :::p, par b {comp supportCallBtn::b:p:60:p, comp sendEmailBtn::b:p:60:p, comp reportBtn::b:p:60:p}, space ::401:x}}"
+				} ) {
+					name: "helpPanel"
+					"background": new java.awt.Color( 240, 240, 240, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "reportBtn"
+						"text": "report a problem"
+						"font": #Font5
+						"foreground": sfield java.awt.Color gray
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						"cursor": #Cursor0
+						"background": #Color4
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "reportBtnMouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "reportBtnMouseExited", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "supportCallBtn"
+						"font": #Font5
+						"foreground": sfield java.awt.Color gray
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						"cursor": #Cursor0
+						"background": #Color4
+						"text": "technical support"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "supportCallBtnMouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "supportCallBtnMouseExited", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "sendEmailBtn"
+						"font": #Font5
+						"foreground": sfield java.awt.Color gray
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						"cursor": #Cursor0
+						"background": #Color4
+						"text": "send an email"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "sendEmailBtnMouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "sendEmailBtnMouseExited", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "sendEmailIcon"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\email-64.png" )
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "supportCallIcon"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\call-91.png" )
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "reportIcon"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\JAVA\\IntelliJ-Workspace\\TicketAutomat\\report-65.png" )
+						"horizontalAlignment": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card4"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {space :0:9:x}"
+				"$verticalGroup": "par l {space :0:577:x}"
+			} ) {
+				name: "sideBar"
+				"background": new java.awt.Color( 76, 143, 194, 255 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 1010, 665 )
+		} )
+	}
+}
